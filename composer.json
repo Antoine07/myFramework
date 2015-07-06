@@ -1,0 +1,39 @@
+{
+  "name": "myframework/myframework",
+  "type": "framework",
+  "description": "experimental framework",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Antoine Lucsko",
+      "email": "antoine.lucsko@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "swiftmailer/swiftmailer": "dev-master",
+    "vlucas/phpdotenv": "^2.0",
+    "guzzlehttp/guzzle": "~6.0",
+    "videlalvaro/php-amqplib": "v2.1.0",
+    "predis/predis": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.2.*",
+    "phpunit/dbunit": "dev-master",
+    "symfony/yaml": "~2.1",
+    "ext-pdo": "*",
+    "ext-simplexml": "*"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "": "src/",
+      "": "tests/"
+    },
+    "classmap": [
+      "src/Services",
+      "app/Controllers",
+      "app/Models"
+    ]
+  }
+}

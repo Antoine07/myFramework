@@ -1,0 +1,23 @@
+BlogController_index:
+    pattern:   \/
+    connect:  Controllers\BlogController:index
+BlogController_show:
+    pattern:   \/post\/(?P<id>[1-9][0-9]*)
+    connect:  Controllers\BlogController:show
+    params: id
+CategoryController_show:
+    pattern:   \/cat\/[a-zA-Z0-9\-_]+\/(?P<cat_id>[1-9][0-9]*)\/(?P<user_id>[1-9][0-9]*)
+    connect:  Controllers\CategoryController:show
+    params: cat_id, user_id
+StudentController:
+    resource: \/student
+    connect: Controllers\StudentController
+    action: '*'
+VelibController_index:
+    resource: \/velib
+    connect: Controllers\VelibController
+    action: '*'
+RabbitMQController_index:
+    resource: \/rabbit
+    connect: Controllers\RabbitMQController
+    action: '*'

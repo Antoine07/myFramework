@@ -1,0 +1,4 @@
+PostController:
+    resource: \/post
+    connect: Controllers\PostController
+    action: '*'

@@ -1,0 +1,1 @@
+INSERT INTO `student` (`username`, `email`) VALUES ('Jhon', 'jhon@jhon.com'),  ('Alan', 'alan@alan.com'),  ('Edgar', 'edgar@edgar.com'),  ('Jack', 'jack@jack.com')
